@@ -67,12 +67,21 @@ $route['micuentaE'] = 'EmprendedorController/miCuenta';
 $route['misproyectos'] = 'EmprendedorController/misProyectos';
 $route['crearproyecto'] = 'EmprendedorController/crearProyecto';
 
+//EMPRENDEDOR
 $route['video/(:num)'] = 'EmprendedorController/subirVideoProyecto';
 $route['imagenes/(:num)'] = 'EmprendedorController/subirImagenProyecto';
 $route['archivo/(:num)'] = 'EmprendedorController/subirArchivoProyecto';
 $route['archivo/(:num)/El_archivo_se_ha_subido_correctamente'] = 'EmprendedorController/subirArchivoProyecto';
 $route['archivo/(:num)/Proyecto_sin_archivo'] = 'EmprendedorController/proyectoSinArchivo';
+$route['emprendedor/editarnombre'] = 'EmprendedorController/editarNombre';
+$route['emprendedor/editarapellido'] = 'EmprendedorController/editarApellido';
+$route['emprendedor/editarcontrasena'] = 'EmprendedorController/editarContrasena';
+$route['emprendedor/editartelefono'] = 'EmprendedorController/editarTelefono';
+$route['emprendedor/editarmail'] = 'EmprendedorController/editarMail';
+//EMPRENDEDOR PROYECTO
+$route['proyecto/crearproyecto'] = 'ProyectoController/crearProyecto';
 
+//INVERSOR
 $route['inversor'] = 'InversorController';
 $route['inversor/(:num)'] = 'InversorController';
 $route['micuentaI'] = 'InversorController/miCuenta';
@@ -87,7 +96,7 @@ $route['inversor/editartelefono'] = 'InversorController/editarTelefono';
 $route['inversor/editarmail'] = 'InversorController/editarMail';
  
 
-
+//ADMIN
 $route['admin'] = 'administradorcontroller/index';
 $route['admin/aceptarproyecto'] = 'administradorcontroller/aceptarproyecto';
 $route['admin/clausurarproyecto'] = 'administradorcontroller/clausurarproyecto';
